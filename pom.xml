@@ -23,6 +23,16 @@
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
+                    <annotationProcessorPaths>
+
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>1.18.20</version>
+                        </path>
+
+
+                    </annotationProcessorPaths>
                 </configuration>
             </plugin>
 
@@ -31,7 +41,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.0.0</version>
                 <configuration>
-                    <mainClass>com.myorg.PingMeCdkVpcPeeringApp</mainClass>
+                    <mainClass>com.stephanecharron.PingMeCdkVpcPeeringApp</mainClass>
                 </configuration>
             </plugin>
         </plugins>
@@ -56,6 +66,12 @@
           <artifactId>junit-jupiter</artifactId>
           <version>${junit.version}</version>
           <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.20</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>
