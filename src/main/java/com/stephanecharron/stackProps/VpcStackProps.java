@@ -22,14 +22,4 @@ public class VpcStackProps implements StackProps {
     public @Nullable Environment getEnv() {
         return this.environment;
     }
-
-    public VpcSetup getVpcSetup() {
-        return vpcSetup;
-    }
-
-    public void setVpcSetup(VpcSetup vpcSetup) {
-        this.vpcSetup = vpcSetup;
-    }
-
-
 }

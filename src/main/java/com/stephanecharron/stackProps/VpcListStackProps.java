@@ -21,11 +21,6 @@ public class VpcListStackProps implements StackProps {
 
     @Override
     public @Nullable Environment getEnv() {
-
         return this.environment;
-    }
-
-    public List<Vpc> getVpcs() {
-        return vpcs;
     }
 }
