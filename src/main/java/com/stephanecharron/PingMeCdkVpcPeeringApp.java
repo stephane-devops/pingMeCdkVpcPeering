@@ -30,7 +30,7 @@ public class PingMeCdkVpcPeeringApp {
 
         VpcStack vpcStack = VpcStack.builder()
                 .scope(app)
-                .id("PingMeCdkJavaStack")
+                .id("VpcStack")
                 .props(vpcStackProps)
                 .build();
 
